@@ -1,0 +1,35 @@
+<p>Without Async</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <br>
+        <th>Title</th>
+        <br>
+        <th>Price</th>
+        <br>    
+        <!-- <th>quantity</th> -->
+        <th>Color</th>
+        <br>
+        <th>ExpiryDate</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{p.id}}</td>
+        <br>
+        <td>{{p.title}}</td>
+        <br>
+        <td>{{p.price}}</td>
+        <!-- <td>{{p.quantity}}</td> -->
+        <br>
+        <td>{{p.color}}</td>
+        <br>
+        <td>{{p.expiryDate}}</td>
+        <br>
+        <td>{{p.isStock}}</td>
+  
+      </tr>
+    </tbody>
+  </table>
